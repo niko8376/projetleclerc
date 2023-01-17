@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leclerc-Rénovation énergétique</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/home.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+<body>
+    <!--Barre de navigation-->
+
+    <nav class="main-navbar">
+
+        <a href="../HTML/home.html"><img src="../images/logo-leclerc energie.jpeg" class="logo"></a>
+
+        <ul class="links-container">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li>
+                        <a href="../HTML/home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Isolation.html">Isolations </a>
+                    </li>
+                    <li>
+                        <a href="revetement.html">Revêtements de sols </a>
+                    </li>
+
+                    <li>
+                        <a href="maconnerie.html"> Maçonnerie générale</a>
+                    </li>
+                    <li>
+                        <a href="toitures.html">Toitures </a>
+                    </li>
+                    <li>
+                        <a href="devis.html">Devis & Contact</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+                </span>
+            </a>
+
+        </ul>
+
+    </nav>
+
+    <!--en téte-->
+    <header>
+        <Div class="header-content">
+        </Div>
+    </header>
+    <div class="texte4">
+        <H2>Pour relever les défis énergétique de demain Leclerc Rénovation est à vos côté
+        </H2>
+    </div>
+    <div class="img">
+        <img src="..//images/plan.jpg" alt="" height="300PX" />
+    </div>
+
+    <div class="p2">
+        <div class="img2">
+            <img src="../images/ouvriers.jpg" alt="" height="400PX" />
+        </div>
+        <div class="texte">
+            <h2>Basée à Saint-Raphaël, l'entreprise LECLERC Rénovation Énergétique opère en construction, rénovation.
+                Notre
+                entreprise est à votre écoute et peut intervenir pour tous travaux de revêtements de sols, toitures,
+                maçonnerie générale, isolations.
+                Nous proposons un large panel de prestations.
+                Besoin d'un conseil, un devis ou un service ? Contactez-nous via notre site ou appelez nous.
+            </H2>
+        </div>
+    </div>
+
+
+
+    <!-- Demo styles -->
+    <style>
+    
+    </style>
+    </head>
+
+    <br>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/maison1.jpg" height="275px" />
+                <div class="texte7">
+                    <h2><a href="Isolation.html" target="_blank">Isolations</a></h2>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../images/revetement2.jpg" height="275px" />
+                <div class="texte8">
+                    <h2><a href="revetement.html" target="_blank">Revêtements de sols</a></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/maconnerie1.jpg" height="275px" />
+                <div class="texte9">
+                    <h2><a href="maconnerie.html" target="_blank">Maçonnerie générale</a></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/toit6.jpg" height="275px" />
+                <div class="texte10">
+                    <h2><a href="toitures.html" target="_blank">Toitures</a></h2>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+                <img src="../images/devis.jpeg" height="275x" />
+                <div class="texte11">
+                    <h2><a href="devis.html" target="_blank">Devis & Contact</a></h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    
+    <script>
+        let sidenav = document.getElementById("mySidenav");
+        let openBtn = document.getElementById("openBtn");
+        let closeBtn = document.getElementById("closeBtn");
+
+        openBtn.onclick = openNav;
+        closeBtn.onclick = closeNav;
+
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            sidenav.classList.add("active");
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            sidenav.classList.remove("active");
+        }
+    </script>
+    <script>
+
+
+
+    </script>
+    <div class="apropos">
+        <h1>A propos de LECLERC Rénovation Énergétique.</h1>
+    </div>
+    <div class="texte1">
+        <h2>Zone d'intervention autour
+            de Saint-Raphaël.</h2>
+        <h3>LECLERC Rénovation Énergétique se déplace dans un rayon de 70km autour de Fréjus.</h3>
+    </div>
+    <div class="texte2">
+        <h2>Atouts de LECLERC Rénovation Énergétique.</h2>
+        <h3>Des délais
+            Montage du dossier de financement.
+            Respect des normes françaises en vigueur.
+            Respect de l'environnement.
+            Etude et conseils personnalisés.
+            Utilisation de matériaux de qualité.
+            Devis gratuit, détaillé et rapide.
+            Un interlocuteur unique.
+            Ouvriers professionnels et qualifiés.
+            Déplacement gratuit.</h3>
+
+    </div>
+    <div class="texte3">
+        <h2>Assurance.</h2><br>
+        <h3>Professionnelle
+            Garantie décennale
+            Garantie de bon fonctionnement
+            Assurance dommages-ouvrage
+            Garantie de parfait achèvement
+            Responsabilité civile. </h3>
+    </div>
+
+
+    <!--pied de page-->
+
+
+    <section></section>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <a href="home.html"><img src="../images/logo-leclerc_energie__2_-removebg-preview.png" height="150px"></a>
+
+            <p class="footer-links">
+                <a href="home.html" class="link-1">Home</a>
+
+                <a href="Isolation.html">Isolation</a>
+
+                <a href="revetement.html">Revêtements de sols</a><br>
+
+                <a href="maconnerie.html">Maçonnerie générale</a>
+
+                <a href="toitures.html">Toitures</a>
+
+                <a href="devis.html">Devis & Contact</a>
+            </p>
+
+            <p class="footer-company-name">© Copyright 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185373.99470161597!2d6.651061869701218!3d43.45081185063573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce983498604e77%3A0x40819a5fd8fccf0!2zRnLDqWp1cw!5e0!3m2!1sfr!2sfr!4v1666173624553!5m2!1sfr!2sfr"
+                width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>07.82.73.52.71</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>A propos de nous</span>
+                Basée à Saint-Raphaël, l'entreprise LECLERC Rénovation Énergétique opère en construction, rénovation.
+                Notre
+                entreprise est à votre écoute et peut intervenir pour tous travaux de revêtements de sols, toitures,
+                maçonnerie générale, isolations.
+
+                Nous proposons un large panel de prestations.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

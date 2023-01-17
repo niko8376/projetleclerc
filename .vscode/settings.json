@@ -1,0 +1,16 @@
+{
+    "json.schemas": [
+    
+    ],
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "json.format.enable": true,
+    "workbench.preferredDarkColorTheme": "Hyper.is Theme - hyperyellow",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Hyper.is Theme - hyperyellow",
+    "window.closeWhenEmpty": true,
+    "window.commandCenter": true
+}
